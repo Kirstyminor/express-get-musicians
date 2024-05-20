@@ -12,7 +12,12 @@ const seedMusician = require("./seedData");
 
 describe('./musicians endpoint', () => {
     // Write your tests here
+    test("endpoint is returning the desired information", async () => {
+        const response = await request(app).get("/musicians");
+       const responseData = JSON.parse(response.text);
+       
     
+    })
     
 
 
@@ -20,3 +25,5 @@ describe('./musicians endpoint', () => {
 
     
 })
+
+
